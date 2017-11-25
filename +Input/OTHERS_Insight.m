@@ -1,0 +1,51 @@
+%%  补充变量
+vc_idle_spd = 0;
+gb_num_init = 1;
+fc_c_init_tmp = 20;
+fc_i_init_tmp = 20;
+fc_x_init_tmp = 20;
+fc_h_init_tmp = 20;
+mc_init_tmp = 20;
+vc_launch_spd=38.4;    %离合器模块
+slip_spd = vc_launch_spd;    %离合器模块
+maxtrq=max(fc_max_trq)*fc_trq_scale+max(mc_max_trq)*mc_overtrq_factor*mc_trq_scale;  %离合器模块
+fc_on = 1;   %发动机附件
+ess_on = 1;  %电器附件
+load_on = 1;  %电器附件
+n = 3;  %车速循环模块
+enable_stop = 0;
+tx_speed_dep = 1;
+%VC控制模块补充变量声明
+cs_lo_soc = 0.15;
+vc_fc_warm_tmp_frac = 0.85;
+cs_decel_fc_off =1;
+cs_electric_decel_spd = 4.500;
+vc_idle_bool = 0;
+vc_clutch_bool = 0;
+gb_shift_delay = 0;
+tx_spd_dep_dnshift = [0,1;1.8611,1;1.8611,2;3.1389,2;3.1389,3;5.1667,3;5.1667,4;7.6944,4;7.6944,5;277.7778,5];
+tx_spd_dep_upshift = [0,1;2.5556,1;2.5556,2;4.2500,2;4.2500,3;7.1944,3;7.1944,4;11.8056,4;11.8056,5;277.7778,5];
+gb_dnshift_spd = {[48.3805 48.4036 103.6726 103.6749];[48.3805 48.4036 103.6726 103.6749];[48.3805 48.4036 103.6726 103.6749];[48.3805 48.4036 103.6726 103.6749];[48.3805 48.4036 103.6726 103.6749]};
+gb_dnshift_load = {[0 0.6000 0.9000 1.000];[0 0.6000 0.9000 1.000];[0 0.6000 0.9000 1.000];[0 0.6000 0.9000 1.000];[0 0.6000 0.9000 1.000]};
+gb_upshift_spd = {[82.9380 82.9611 225.7758];[82.9380 82.9611 225.7758];[82.9380 82.9611 225.7758];[82.9380 82.9611 225.7758];[82.9380 82.9611 225.7758]};
+gb_upshift_load = {[0 0.3000 1.000];[0 0.3000 1.000];[0 0.3000 1.000];[0 0.3000 1.000];[0 0.3000 1.000]};
+
+%% 
+enable_stop_fc=0;
+ess_mod_init_tmp=20;
+ex_cat_int_init_tmp=20;
+enable_sim_stop_distance=0;
+ex_cat_mon_init_tmp=20;
+enable_sim_stop_speed=0;
+ess_init_soc=0.7;
+ex_cat_pipe_init_tmp=20;
+amb_tmp=20;
+enable_sim_stop_time=0;
+air_cp=1009;
+ex_cat_ext_init_tmp=20;
+enable_sim_stop_max_spd=0;
+ex_manif_init_tmp=20;
+sim_stop_distance=Inf;
+j17_endtimes=[Inf Inf];
+sim_stop_speed=Inf;
+sim_stop_time=Inf;
