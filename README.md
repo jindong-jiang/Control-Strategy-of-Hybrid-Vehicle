@@ -3,7 +3,9 @@
 Based on the software advisor, here is a simulink model built to simulate the hybrid vehicle, where the rule-based 
 control strategy is applied to distribution of energy demand between internal combustion engine and electrical motor.
 
-In the program, the Main_Jiang.m is the main function.  
+In the program, the Main_Jiang.m is the main function. 
+
+  
 **The simulink top level structure**  
 ![The simulink top level structure](https://github.com/kyle662606957/Control-Strategy-of-Hybrid-Vehicle/blob/master/Resultat/advisor.PNG)
 **The algorithm of rule-based control strategy**
