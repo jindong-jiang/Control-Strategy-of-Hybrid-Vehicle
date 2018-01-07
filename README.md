@@ -5,7 +5,7 @@ control strategy is applied to distribution of energy demand between internal co
 
 In the program, the Main_Jiang.m is the main function.
 
-![The simulink top level structure](Control-Strategy-of-Hybrid-Vehicle/Resultat/advisor.PNG)
+![The simulink top level structure](https://github.com/kyle662606957/Control-Strategy-of-Hybrid-Vehicle/blob/master/Resultat/advisor.PNG)
 ![The algorithm of rule-based control strategy](Control-Strategy-of-Hybrid-Vehicle/Resultat/strategie.PNG)
 ![The component subsytem of the algorithm ](Control-Strategy-of-Hybrid-Vehicle/Resultat/subsytem1.PNG)
 ![The result of the distribution operating state of the motor ](Control-Strategy-of-Hybrid-Vehicle/Resultat/resultat.PNG)
